@@ -127,3 +127,24 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Add Go-specific patterns
+cat >> .gitignore << EOF
+
+# Go specific
+/vendor/
+/Godeps/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/go.work
+
+# Kubernetes
+kubeconfig
+*.kubeconfig
+EOF
